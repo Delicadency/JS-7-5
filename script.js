@@ -9,7 +9,6 @@ const createButton = () => {
 };
 const getButton = document.getElementByID("super-button");
 const openAlert = () => {
- alert(super);
-}
-getButton.addEventListener("click", openAlert ());
-
+  alert("super");
+};
+getButton.addEventListener("click", openAlert());
