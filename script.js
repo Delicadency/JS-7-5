@@ -5,8 +5,9 @@ const createButton = () => {
   document.body.appendChild(button);
   return button;
 };
-const getButton = document.getElementByID("super-button");
+const getButton = createButton();
+console.log(getButton);
 const openAlert = () => {
   alert("super");
 };
-getButton.addEventListener("click", openAlert());
+getButton.addEventListener("click", openAlert);
